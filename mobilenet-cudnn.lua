@@ -1,3 +1,7 @@
+require 'nn'
+require 'cunn'
+require 'cudnn'
+
 local function convDepthPointCudnn(nInputPlane, nOutputPlane, stride)
     local net = nn.Sequential()
     local pad = 1
